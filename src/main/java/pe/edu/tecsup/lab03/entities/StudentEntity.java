@@ -6,15 +6,17 @@ public class StudentEntity {
     private String nombre;
     private String apellido;
     private String email;
+    private String carrera;
 
     public StudentEntity() {
     }
 
-    public StudentEntity(Long id, String nombre, String apellido, String email) {
+    public StudentEntity(Long id, String nombre, String apellido, String email, String carrera) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
+        this.carrera = carrera;
     }
 
     public Long getId() {
@@ -49,8 +51,16 @@ public class StudentEntity {
         this.email = email;
     }
 
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+
     @Override
     public String toString() {
-        return "StudentEntity{id=" + id + ", nombre='" + nombre + "', apellido='" + apellido + "', email='" + email + "'}";
+        return "StudentEntity{id=" + id + ", nombre='" + nombre + "', apellido='" + apellido + "', email='" + email + "', carrera='" + carrera+ "'}";
     }
 }

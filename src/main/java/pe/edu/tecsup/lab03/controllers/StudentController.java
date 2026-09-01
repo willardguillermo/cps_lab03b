@@ -24,4 +24,8 @@ public class StudentController {
     public void eliminar(Long id) {
         studentService.eliminar(id);
     }
+
+    public void mostrarMensaje() {
+        System.out.println("Controlador de estudiantes funcionando correctamente");
+    }
 }

@@ -9,9 +9,9 @@ public class Application {
 
         StudentService studentService = new StudentService();
 
-        StudentEntity student1 = new StudentEntity(null, "Juan", "Perez", "juan.perez@mail.com");
-        StudentEntity student2 = new StudentEntity(null, "Maria", "Lopez", "maria.lopez@mail.com");
-        StudentEntity student3 = new StudentEntity(null, "Carlos", "Gomez", "carlos.gomez@mail.com");
+        StudentEntity student1 = new StudentEntity(null, "Juan", "Perez", "juan.perez@mail.com", "Software");
+        StudentEntity student2 = new StudentEntity(null, "Maria", "Lopez", "maria.lopez@mail.com", "Administracion");
+        StudentEntity student3 = new StudentEntity(null, "Carlos", "Gomez", "carlos.gomez@mail.com", "Comunicacion");
 
         studentService.guardar(student1);
         studentService.guardar(student2);
