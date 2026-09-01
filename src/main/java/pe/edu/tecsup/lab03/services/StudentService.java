@@ -27,6 +27,6 @@ public class StudentService {
     }
 
     public int cantidadEstudiantes() {
-        return StudentRepository.findAll().size();
+        return studentRepository.findAll().size();
     }
 }
