@@ -25,4 +25,8 @@ public class StudentService {
     public void eliminar(Long id) {
         studentRepository.deleteById(id);
     }
+
+    public int cantidadEstudiantes() {
+        return StudentRepository.findAll().size();
+    }
 }

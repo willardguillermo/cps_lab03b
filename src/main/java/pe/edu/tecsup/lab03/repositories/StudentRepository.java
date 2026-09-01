@@ -32,4 +32,8 @@ public class StudentRepository {
     public void deleteById(Long id) {
         students.removeIf(s -> s.getId().equals(id));
     }
+
+    public void limpiarDatos () {
+        students.clear();
+    }
 }
